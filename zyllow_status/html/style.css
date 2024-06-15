@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+    font-family: 'Arial', sans-serif;
+}
+
+#notification {
+    position: absolute;
+    top: 42px;
+    right: 10px;
+    color: rgba(255, 255, 255, 0.2);
+    text-align: right;
+    font-size: 12px;
+}
+
+#server-status {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+#status-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+#date-time,
+#players-info {
+    margin-top: 5px;
+}
